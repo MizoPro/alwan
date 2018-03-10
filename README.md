@@ -1,6 +1,6 @@
 # RGB / Hex Converter
 
-An easy-to-use RGB to Hex (and vice versa) Converter website.
+A website app to easily convert RGB color values to Hex and vice versa.
 
 ## About
 
@@ -8,11 +8,7 @@ Originally created for a Coding Challenge in [SoloLearn](https://www.sololearn.c
 
 ## Author
 
-Hamza Belhadj Ahmed (MizoPro)
-
-Email: <hmzblhdjahmd@gmail.com>
-
-Copyrights (C) 2018
+Hamza Belhadj Ahmed (MizoPro) (C) 2018
 
 ## License
 
