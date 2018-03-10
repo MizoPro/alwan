@@ -1,0 +1,130 @@
+/*!
+ * RGB ~ HEX Converter App Theme
+ *
+ * Author: MizoPro(C)
+ *
+ * License: the MIT License.
+ */
+
+/*
+  SETUP
+       */
+body {
+    background: #FFF;
+    color: #444;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/*
+  HEADER
+        */
+header {
+    margin: 0 auto 1.5em;
+}
+
+header .inner {
+    padding: .5em;
+    background-color: #306090;
+    color: #D1D4D7;
+}
+
+header h1 {
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+header i {
+    display: inline-block;
+    padding: .2em;
+    background-color: #275481;
+    border-radius: .4em;
+}
+
+header p {
+    color: #A7AFB7;
+}
+
+
+/*
+  CONTAINER
+           */
+#container {
+    margin: .5em;
+}
+
+input[type="text"] {
+    padding: .2em .4em;
+}
+
+.block {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    border: .1em solid #CCC;
+}
+
+.alert {
+    font-family: 'Source Pro', consolas, monospace;
+}
+
+.alert .content {
+    margin: 0 .5em;
+}
+
+.form {
+    position: relative;
+    margin: 0 auto;
+}
+
+.form h2 {
+    font-size: 2.1em;
+    color: #666;
+}
+
+.form .inputs {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.form .btn {
+    position: relative;
+    float: right;
+    padding: .25em .5em;
+    border-bottom-width: .3em;
+}
+
+.form .btn:hover {
+    top: .5em;
+}
+
+.form .btn:active {
+    top: 1em;
+    border-bottom-width: .2em;
+    outline: none;
+}
+
+.form .out {
+    margin-top: 1em;
+    text-align: center;
+}
+
+/*
+  FOOTER
+        */
+footer {
+    margin: 1em;
+    padding-top: .5em;
+    border-top: .1em dashed #AAB;
+    text-align: center;
+}
+
+footer big {
+    font-size: 1.5em;
+}
