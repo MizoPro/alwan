@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RGB ~ Hex Converter</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="page__header">
+            <div class="inner">
+                <h1>
+                    <i class="fa fa-refresh"></i>
+                    <kbd>RGB</kbd> / <kbd>Hex</kbd> Converter
+                </h1>
+                <p>
+                    <i class="fa fa-info"></i>
+                    An easy-to-use RGB to Hex Converter (and vice versa)
+                </p>
+                </h1>
+            </div>
+        </header>
+        <div id="container">
+            <div class="well form js-form js-form-hex">
+                <h2>RGB to Hex</h2>
+                <div class="inputs js-inputs">
+                    rgb( 
+                    <input type="text" name="red" placeholder="0" size="3" /> , 
+                    <input type="text" name="green" placeholder="0" size="3" /> , 
+                    <input type="text" name="blue" placeholder="0" size="3" /> 
+                    )
+                </div>
+                <button class="btn js-button btn-default btn-primary">Convert to <code>Hex</code></button>
+                <br clear="both" />
+                <div class="out js-output clearfix"></div>
+            </div>
+            <hr class="sep" />
+            <div class="well form js-form js-form-rgb">
+                <h2>Hex to RGB</h2>
+                <div class="inputs js-inputs">
+                    #
+                    <input type="text" name="hex" placeholder="000000" size="6" />
+                </div>
+                <button class="btn js-button btn-default btn-success">Convert to <code>RGB</code></button>
+                <br clear="both" />
+                <div class="out js-output clearfix"></div>
+            </div>
+        </div>
+        <footer class="page__footer">
+            <div>Copyrights &copy; MizoPro</div>
+            <big><a href="https://github.com/mizopro"><i class="fa fa-github"></i></a>
+            |
+            <a href="https://twitter.com/MizoPro"><i class="fa fa-twitter"></i></a>
+        </footer></big>
+    </body>
+</html>
