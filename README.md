@@ -12,9 +12,11 @@ Originally created for a [Coding Challenge] in [SoloLearn]
 
 ## Author
 
-Hamza Belhadj (*MizoPro*)
+Hamza Belhadj (aka *MizoPro*)
 
-(C) 2018
+Check out my SoloLearn [Profile] for more codes.
+
+(C) Copyrights, 2018
 
 ## License
 
@@ -22,4 +24,5 @@ The MIT License.
 Read the `LICENSE` file for more information.
 
 [SoloLearn]: https://www.sololearn.com
+[Profile]: https://www.sololearn.com/profile/
 [Coding Challenge]: https://www.sololearn.com/learn/5742/?ref=app
