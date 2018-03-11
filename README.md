@@ -8,7 +8,7 @@ Website URL: https://mizopro.github.io/RGBHexConv
 
 Originally created for a [Coding Challenge] in [SoloLearn]
 
-Note: The challenge url is only accessible within SoloLearn's mobile app.
+*Note: The challenge url is only accessible within SoloLearn's mobile app.*
 
 ## Author
 
