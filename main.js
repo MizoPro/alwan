@@ -1,8 +1,9 @@
 /*!
- * RGB Hex <Converter>
+ * RGB - Hex Converter
+ * Color converter tool
  *
  * Author: MizoPro
- * License: the MIT License
+ * License: MIT <https://github.com/mizopro/RGBHexConv/blob/master/LICENSE>
  */
 
 // Main
@@ -12,11 +13,10 @@ $(document).ready(function() {
 });
 
 /**
- * (Async) Convert a `RGB` color to `Hex`.
+ * (Async) Convert a `RGB` color to `Hex`
  *
  * @param {Array} rgb color to convert
- * @param {Function} cb callback with two parameters
- *                      `err` and `hex`
+ * @param {Function} cb callback with two parameters `err` (failure) and `hex` (success)
  */
 function ConvertToHex(rgb, cb) {
     var err, hex;
@@ -35,17 +35,16 @@ function ConvertToHex(rgb, cb) {
             })
             .join("");
     } else {
-        err = new Error("All RGB Values must be integers between 0 and 255.");
+        err = new Error("All RGB Values must be integers in range 0 to 255.");
     }
     cb(err, hex);
 }
 
 /**
- * (Async) Convert a `Hex` color to `RGB`.
+ * (Async) Convert a `Hex` color to `RGB`
  *
  * @param {String} hex color to convert
- * @param {Function} cb callback with two parameters
- *                      `err` and `rgb`
+ * @param {Function} cb callback with two parameter `err` (failure) and `rgb` (success)
  */
 function ConvertToRGB(hex, cb) {
     var err, rgb, syntxErr = false;
@@ -68,25 +67,23 @@ function ConvertToRGB(hex, cb) {
             })
             .join("");
     } else {
-        err = new Error("All RGB Values must be integers between 0 and 255.");
+        err = new Error("Invalid Hex value!");
     }
     cb(err, rgb);
 }
 
 /**
- *
- *
- *
+ * Setting-up functions holder
  */
 const setupForm = {
     /**
+     * Setup the 'To Hex' Converter
      *
-     *
-     *
+     * @param {jQuery} $form form element
      */
     hex: function($form) {
         const $ins = $form.find('.js-inputs');
-        var $btn = $form.find('.js-button');
+        const $btn = $form.find('.js-button');
         const $out = $form.find('.js-output');
         $btn.click(function(e) {
             const rgb = [];
@@ -104,35 +101,48 @@ const setupForm = {
             });
         });
     },
-    /*
+    /**
+     * Setup the 'To RGB' Converter
      *
-     *
-     *
+     * @param {jQuery} $form form element
      */
     rgb: function($form) {
-        
+        const $ins = $form.find('.js-inputs');
+        const $btn = $form.find('.js-button');
+        const $out = $form.find('.js-output');
+        $btn.click(function(e) {
+            const hex = $ins.find('input[name="hex"]').val() || "000";
+            ConvertToRGB(hex, function(err, rgb) {
+                if (err) {
+                    $out.html(WarningElement(err.message));
+                    return;
+                }
+                $out.html(ColorElement("rgb(" + rgb.join(",") + ")"));
+            });
+        });
     }
 };
 
 /**
+ * A color block HTML Element
  *
- *
- *
- *
+ * @param {String} color Hex or RGB Color value
+ * @return {jQuery} resulted element
  */
 function ColorElement(color) {
     const d = $('<div></div>');
-    const b = $('<div class="block"></div>')
+    const b = $('<div class="block"></div>');
     b.css('backgroundColor', color);
-    d.append('<span>' + color + '</span>');
+    d.append('<div>' + color + '</div>');
     d.append(b);
     return d;
 }
 
 /**
+ * A warning box HTML Element
  *
- *
- *
+ * @param {String} msg warning message
+ * @return {jQuery} resulted element
  */
 function WarningElement(msg) {
     const d = $('<div class="alert alert-warning"></div>');

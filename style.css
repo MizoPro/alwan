@@ -2,15 +2,14 @@
  * RGB ~ HEX Converter App Theme
  *
  * Author: MizoPro(C)
- *
- * License: the MIT License.
+ * License: MIT <https://github,com/mizopro/RGBHexConv/blob/master/LICENSE>
  */
 
 /*
   SETUP
        */
 body {
-    background: #FFF;
+    background-color: #FFF;
     color: #444;
 }
 
@@ -61,6 +60,9 @@ header p {
 
 input[type="text"] {
     padding: .2em .4em;
+    background-color: #F1F4F7;
+    border: .1em solid #CCC;
+    border-radius: .25em;
 }
 
 .block {
