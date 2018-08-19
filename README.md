@@ -1,5 +1,7 @@
 # RGB / Hex Converter
 
+[![Join the chat at https://gitter.im/mizopro/alwan](https://badges.gitter.im/mizopro/alwan.svg)](https://gitter.im/mizopro/alwan?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A website app to easily convert RGB color values to Hex and vice versa.
 
 Website URL: https://mizopro.github.io/RGBHexConv
